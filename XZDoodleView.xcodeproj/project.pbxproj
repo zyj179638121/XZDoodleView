@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31BF6501E261A0900DACD22 /* XZDrawBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = A31BF64F1E261A0900DACD22 /* XZDrawBoard.m */; };
 		A35C364F1E25DE0000628E6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C364E1E25DE0000628E6B /* main.m */; };
 		A35C36521E25DE0000628E6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C36511E25DE0000628E6B /* AppDelegate.m */; };
 		A35C36551E25DE0000628E6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C36541E25DE0000628E6B /* ViewController.m */; };
 		A35C36581E25DE0000628E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35C36561E25DE0000628E6B /* Main.storyboard */; };
 		A35C365A1E25DE0000628E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35C36591E25DE0000628E6B /* Assets.xcassets */; };
 		A35C365D1E25DE0000628E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35C365B1E25DE0000628E6B /* LaunchScreen.storyboard */; };
+		A35C36671E25DEE800628E6B /* XZDoodleView.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C36661E25DEE800628E6B /* XZDoodleView.m */; };
+		A35C366A1E25DEFF00628E6B /* DoodleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = A35C36691E25DEFF00628E6B /* DoodleConfig.m */; };
+		B8102F27189C90E32661F68C /* libPods-XZDoodleView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78258FB86490A097ED937A4A /* libPods-XZDoodleView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		183732C08513CA89B85D00C0 /* Pods-XZDoodleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZDoodleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-XZDoodleView/Pods-XZDoodleView.release.xcconfig"; sourceTree = "<group>"; };
+		78258FB86490A097ED937A4A /* libPods-XZDoodleView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XZDoodleView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31BF64E1E261A0900DACD22 /* XZDrawBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDrawBoard.h; sourceTree = "<group>"; };
+		A31BF64F1E261A0900DACD22 /* XZDrawBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDrawBoard.m; sourceTree = "<group>"; };
 		A35C364A1E25DE0000628E6B /* XZDoodleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XZDoodleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35C364E1E25DE0000628E6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A35C36501E25DE0000628E6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,11 @@
 		A35C36591E25DE0000628E6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35C365C1E25DE0000628E6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A35C365E1E25DE0000628E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35C36651E25DEE800628E6B /* XZDoodleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZDoodleView.h; sourceTree = "<group>"; };
+		A35C36661E25DEE800628E6B /* XZDoodleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZDoodleView.m; sourceTree = "<group>"; };
+		A35C36681E25DEFF00628E6B /* DoodleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DoodleConfig.h; sourceTree = "<group>"; };
+		A35C36691E25DEFF00628E6B /* DoodleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DoodleConfig.m; sourceTree = "<group>"; };
+		D04D3B2BBC48D6FB197642D2 /* Pods-XZDoodleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XZDoodleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XZDoodleView/Pods-XZDoodleView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +46,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8102F27189C90E32661F68C /* libPods-XZDoodleView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F61452D2E141CD06561BFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				78258FB86490A097ED937A4A /* libPods-XZDoodleView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		747225DE52D6ED53771FEE8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D04D3B2BBC48D6FB197642D2 /* Pods-XZDoodleView.debug.xcconfig */,
+				183732C08513CA89B85D00C0 /* Pods-XZDoodleView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A35C36411E25DE0000628E6B = {
 			isa = PBXGroup;
 			children = (
 				A35C364C1E25DE0000628E6B /* XZDoodleView */,
 				A35C364B1E25DE0000628E6B /* Products */,
+				747225DE52D6ED53771FEE8B /* Pods */,
+				5F61452D2E141CD06561BFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +91,7 @@
 		A35C364C1E25DE0000628E6B /* XZDoodleView */ = {
 			isa = PBXGroup;
 			children = (
+				A35C36641E25DED600628E6B /* XZDoodleView */,
 				A35C36501E25DE0000628E6B /* AppDelegate.h */,
 				A35C36511E25DE0000628E6B /* AppDelegate.m */,
 				A35C36531E25DE0000628E6B /* ViewController.h */,
@@ -79,6 +113,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A35C36641E25DED600628E6B /* XZDoodleView */ = {
+			isa = PBXGroup;
+			children = (
+				A35C36651E25DEE800628E6B /* XZDoodleView.h */,
+				A35C36661E25DEE800628E6B /* XZDoodleView.m */,
+				A31BF64E1E261A0900DACD22 /* XZDrawBoard.h */,
+				A31BF64F1E261A0900DACD22 /* XZDrawBoard.m */,
+				A35C36681E25DEFF00628E6B /* DoodleConfig.h */,
+				A35C36691E25DEFF00628E6B /* DoodleConfig.m */,
+			);
+			path = XZDoodleView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A35C36611E25DE0000628E6B /* Build configuration list for PBXNativeTarget "XZDoodleView" */;
 			buildPhases = (
+				7FE03FDC91C23D23D59CA2CE /* [CP] Check Pods Manifest.lock */,
 				A35C36461E25DE0000628E6B /* Sources */,
 				A35C36471E25DE0000628E6B /* Frameworks */,
 				A35C36481E25DE0000628E6B /* Resources */,
+				AEDDAD140165752325E53E9C /* [CP] Embed Pods Frameworks */,
+				E6029CD97ADD842F84874CBE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +196,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7FE03FDC91C23D23D59CA2CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AEDDAD140165752325E53E9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZDoodleView/Pods-XZDoodleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6029CD97ADD842F84874CBE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XZDoodleView/Pods-XZDoodleView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A35C36461E25DE0000628E6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A35C36551E25DE0000628E6B /* ViewController.m in Sources */,
+				A35C36671E25DEE800628E6B /* XZDoodleView.m in Sources */,
+				A31BF6501E261A0900DACD22 /* XZDrawBoard.m in Sources */,
 				A35C36521E25DE0000628E6B /* AppDelegate.m in Sources */,
+				A35C366A1E25DEFF00628E6B /* DoodleConfig.m in Sources */,
 				A35C364F1E25DE0000628E6B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,10 +372,12 @@
 		};
 		A35C36621E25DE0000628E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D04D3B2BBC48D6FB197642D2 /* Pods-XZDoodleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A54ZG5654W;
 				INFOPLIST_FILE = XZDoodleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.XZDoodleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,10 +386,12 @@
 		};
 		A35C36631E25DE0000628E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183732C08513CA89B85D00C0 /* Pods-XZDoodleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A54ZG5654W;
 				INFOPLIST_FILE = XZDoodleView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.XZDoodleView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +417,7 @@
 				A35C36631E25DE0000628E6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

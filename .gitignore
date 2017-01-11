@@ -1,0 +1,7 @@
+XZDoodleView.xcodeproj/xcuserdata/
+XZDoodleView.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+XZDoodleView.xcodeproj/project.xcworkspace/xcuserdata/
