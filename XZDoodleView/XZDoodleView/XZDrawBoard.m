@@ -21,7 +21,6 @@
     if (self) {
         // 添加手势
         self.backgroundColor = [UIColor clearColor];
-        [self addGestureRecognizer];
     }
     return self;
 }
@@ -34,12 +33,31 @@
     }
 }
 
-- (void)addGestureRecognizer {
-    // panGestureRecognizer
-    [self addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizerAction:)]];
+#pragma mark - GestureRecognizerAction
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = touches.anyObject;
+    CGPoint startPoint = [touch locationInView:touch.view];
+    UIBezierPath *path = [UIBezierPath bezierPath];
+    [path setLineWidth:self.config.lineWidth];
+    [path setLineCapStyle:self.config.lineCap];
+    [path setLineJoinStyle:self.config.lineJoin];
+    [path moveToPoint:startPoint];
+    [self.lineArr addObject:path];
+    [self setNeedsDisplay];
 }
 
-#pragma mark - GestureRecognizerAction
+- (void)touchesMoved:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UITouch *touch = touches.anyObject;
+    CGPoint currentPoint = [touch locationInView:touch.view];
+    UIBezierPath *path = [self.lineArr lastObject];
+    [path addLineToPoint:currentPoint];
+    [self setNeedsDisplay];
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+}
 
 - (void)panGestureRecognizerAction:(UIPanGestureRecognizer *)PanGR {
     UIGestureRecognizerState state = PanGR.state;
