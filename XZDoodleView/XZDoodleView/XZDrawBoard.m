@@ -59,32 +59,6 @@
     
 }
 
-- (void)panGestureRecognizerAction:(UIPanGestureRecognizer *)PanGR {
-    UIGestureRecognizerState state = PanGR.state;
-    if (state == UIGestureRecognizerStateBegan) {
-    
-        CGPoint startPoint = [PanGR locationInView:PanGR.view];
-        UIBezierPath *path = [UIBezierPath bezierPath];
-        [path setLineWidth:self.config.lineWidth];
-        [path setLineCapStyle:self.config.lineCap];
-        [path setLineJoinStyle:self.config.lineJoin];
-        [path moveToPoint:startPoint];
-        [self.lineArr addObject:path];
-        [self setNeedsDisplay];
-        
-    }else if (state == UIGestureRecognizerStateChanged) {
-        
-        CGPoint currentPoint = [PanGR locationInView:PanGR.view];
-        UIBezierPath *path = [self.lineArr lastObject];
-        [path addLineToPoint:currentPoint];
-        [self setNeedsDisplay];
-        
-    }else if (state == UIGestureRecognizerStateEnded) {
-
-    }
-    
-}
-
 #pragma mark - public methods
 
 - (void)revoke {
